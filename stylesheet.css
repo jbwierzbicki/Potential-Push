@@ -1,0 +1,25 @@
+body {
+    background-color: #3995BC;
+}
+
+.navbar-logo {
+    height: inherit;
+}
+
+.navbar-brand {
+    height: 80px;
+}
+
+.navbar {
+    background-color: #3995BC;
+    height: 8%;
+    border: none;
+}
+
+.navbar-nav {
+    margin-top: 2%
+}
+
+a {
+    color: white !important;
+}
