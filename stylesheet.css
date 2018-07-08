@@ -19,7 +19,7 @@ body {
 }
 
 .navbar-nav {
-    margin-top: 4%;
+    margin-top: 50px;
     font-size: 20px;
     font-family: 'Concert One', cursive;
     
@@ -30,7 +30,7 @@ a {
     color: white !important;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:668px) {
     .navbar-brand-centered {
         position: absolute;
         left: 50%;
