@@ -20,9 +20,11 @@ body {
 
 .navbar-nav {
     margin-top: 4%;
-    font-family: 'Markazi Text', serif;
-    font-size: 23px;
+    font-size: 20px;
+    font-family: 'Concert One', cursive;
+    
 }
+
 
 a {
     color: white !important;
