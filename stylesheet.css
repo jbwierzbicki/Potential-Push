@@ -3,11 +3,13 @@ body {
 }
 
 .navbar-logo {
-    height: inherit;
+    height: 120px;
+    width: 260px;
 }
 
 .navbar-brand {
-    height: 80px;
+    height: 120px;
+    width: 260px;
 }
 
 .navbar {
@@ -17,7 +19,9 @@ body {
 }
 
 .navbar-nav {
-    margin-top: 2%
+    margin-top: 4%;
+    font-family: 'Markazi Text', serif;
+    font-size: 23px;
 }
 
 a {
@@ -29,11 +33,13 @@ a {
         position: absolute;
         left: 50%;
         display: block;
-        width: 160px;
+        height: 120px;
+        width: 260px;
         text-align: center;
     }
     .navbar>.container .navbar-brand-centered, 
     .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
+        margin-left: -130px;
     }
 }
+
