@@ -2,6 +2,10 @@ body {
     background-color: #3995BC;
 }
 
+a {
+    color: white !important;
+}
+
 .navbar-logo {
     height: 120px;
     width: 260px;
@@ -26,10 +30,6 @@ body {
 }
 
 
-a {
-    color: white !important;
-}
-
 @media screen and (min-width:768px){
     .navbar-brand-centered {
         position: absolute;
@@ -45,3 +45,13 @@ a {
     }
 }
 
+.table {
+    margin-top: 50px;
+}
+
+.table thead tr th {
+    text-align: center;
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
