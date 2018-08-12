@@ -8,6 +8,10 @@ a {
     color: white !important;
 }
 
+h1 {
+    font-size: 65px;
+}
+
 
 /* Navbar */
 
@@ -89,7 +93,13 @@ a {
     margin-right: auto;
     align-content: center !important;
     font-family: 'Changa One';
-    color: slategrey;
-    background-color: white;
+    color: white;
     width: 80%;
+    min-height: 600px !important;
+}
+
+.top-row {
+    text-align: center;
+    width: 50%;
+    
 }
