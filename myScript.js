@@ -10,6 +10,10 @@ $(document).ready(function(){
 
 
 });
+
+var customerName = getElementById("name");
+
+
 function generateInvoice() {
   document.getElementById("invoice-form").submit();
 }
