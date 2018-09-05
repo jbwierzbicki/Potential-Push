@@ -54,7 +54,23 @@
   <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
 
   <!-- Inline CSS based on choices in "Settings" tab -->
-  <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+  <style>
+    .bootstrap-iso .formden_header h2,
+    .bootstrap-iso .formden_header p,
+    .bootstrap-iso form {
+      font-family: Arial, Helvetica, sans-serif;
+      color: black
+    }
+
+    .bootstrap-iso form button,
+    .bootstrap-iso form button:hover {
+      color: white !important;
+    }
+
+    .asteriskField {
+      color: red;
+    }
+  </style>
 
   <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
   <!-- Include jQuery -->
@@ -62,7 +78,7 @@
 
   <!-- Include Date Range Picker -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
 
 
 </head>
@@ -99,135 +115,145 @@
     <!-- /.container-fluid -->
   </nav>
   <div class="invoice-body">
-
     <div class="bootstrap-iso invoice-container">
-     <div class="container-fluid invoice-form">
-      <div class="row invoice-row">
-       <div class="col-md-6 col-sm-6 col-xs-12 ">
-        <form class="form-horizontal" method="post" id="invoice-form">
-         <div class="form-group">
-          <label class="control-label col-sm-2 requiredField " for="name">
+      <div class="container-fluid invoice-form">
+        <div class="row invoice-row">
+          <div class="col-md-6 col-sm-6 col-xs-12 ">
+            <form class="form-horizontal" method="post" id="invoice-form">
+              <div class="form-group">
+                <label class="control-label col-sm-2 requiredField " for="name">
            Customer Name
            <span class="asteriskField">
             *
            </span>
           </label>
-          <div class="col-sm-10">
-           <input class="form-control" id="name" name="name" type="text"/>
-          </div>
-         </div>
-         <div class="form-group ">
-          <label class="control-label col-sm-2 requiredField" for="email">
+                <div class="col-sm-10">
+                  <input class="form-control" id="name" name="name" type="text" />
+                </div>
+              </div>
+              <div class="form-group ">
+                <label class="control-label col-sm-2 requiredField" for="email">
            Email
            <span class="asteriskField">
             *
            </span>
           </label>
-          <div class="col-sm-10">
-           <input class="form-control" id="email" name="email" type="text"/>
-          </div>
-         </div>
-         <div class="form-group ">
-          <label class="control-label col-sm-2" for="tel">
+                <div class="col-sm-10">
+                  <input class="form-control" id="email" name="email" type="text" />
+                </div>
+              </div>
+              <div class="form-group ">
+                <label class="control-label col-sm-2" for="tel">
            Phone #
           </label>
-          <div class="col-sm-10">
-           <input class="form-control" id="tel" name="tel" type="text"/>
-          </div>
-         </div>
-         <div class="form-group ">
-          <label class="control-label col-sm-2 requiredField" for="date">
+                <div class="col-sm-10">
+                  <input class="form-control" id="tel" name="tel" type="text" />
+                </div>
+              </div>
+              <div class="form-group ">
+                <label class="control-label col-sm-2 requiredField" for="date">
            Date Service Performed
            <span class="asteriskField">
             *
            </span>
           </label>
-          <div class="col-sm-10">
-           <div class="input-group">
-            <div class="input-group-addon">
-             <i class="fa fa-calendar">
+                <div class="col-sm-10">
+                  <div class="input-group">
+                    <div class="input-group-addon">
+                      <i class="fa fa-calendar">
              </i>
-            </div>
-            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
-           </div>
-          </div>
-         </div>
-         <div class="form-group ">
-          <label class="control-label col-sm-2 requiredField">
+                    </div>
+                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group ">
+                <label class="control-label col-sm-2 requiredField">
            Services Performed
            <span class="asteriskField">
             *
            </span>
           </label>
-          <div class="col-sm-10 ">
-           <div class="checkbox">
-            <label class="checkbox">
+                <div class="col-sm-10 ">
+                  <div class="checkbox">
+                    <label class="checkbox">
              <input name="checkbox" type="checkbox" value="Virus Removal"/>
              Virus Removal
             </label>
-           </div>
-           <div class="checkbox">
-            <label class="checkbox">
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox">
              <input name="checkbox" type="checkbox" value="PC Setup"/>
              PC Setup
             </label>
-           </div>
-           <div class="checkbox">
-            <label class="checkbox">
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox">
              <input name="checkbox" type="checkbox" value="Printer Setup"/>
              Printer Setup
             </label>
-           </div>
-           <div class="checkbox">
-            <label class="checkbox">
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox">
              <input name="checkbox" type="checkbox" value="Printer Maintenance"/>
              Printer Maintenance
             </label>
-           </div>
-           <div class="checkbox">
-            <label class="checkbox">
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox">
              <input name="checkbox" type="checkbox" value="Comprehensive Diagnostic + Repair"/>
              Comprehensive Diagnostic + Repair
             </label>
-           </div>
-           <div class="checkbox">
-            <label class="checkbox">
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox">
              <input name="checkbox" type="checkbox" value="Software Installation"/>
              Software Installation
             </label>
-           </div>
-           <div class="checkbox">
-            <label class="checkbox">
+                  </div>
+                  <div class="checkbox">
+                    <label class="checkbox">
              <input name="checkbox" type="checkbox" value="Other"/>
              Other
             </label>
-           </div>
-          </div>
-         </div>
-         <div class="form-group ">
-          <label class="control-label col-sm-2 requiredField" for="number">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group ">
+                <label class="control-label col-sm-2 requiredField" for="number">
            Hours
            <span class="asteriskField">
             *
            </span>
           </label>
-          <div class="col-sm-10">
-           <input class="form-control" id="number" name="number" type="text"/>
-          </div>
-         </div>
-         <div class="form-group">
-          <div class="col-sm-10 col-sm-offset-2">
-           <button class="btn btn-primary " name="submit" type="submit" onclick="generateInvoice()">
+                <div class="col-sm-10">
+                  <input class="form-control" id="number" name="number" type="text" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-10 col-sm-offset-2">
+                  <button class="btn btn-primary " name="submit" type="submit" onclick="generateInvoice()">
             Submit
            </button>
+                </div>
+              </div>
+            </form>
           </div>
-         </div>
-        </form>
-       </div>
+        </div>
       </div>
-     </div>
     </div>
+  </div>
 
+  <!-- Invoice DIV -->
+  <div class="generated-invoice">
+    <center>
+    <h4>Services Performed</h4>
+    <h5>Invoice</h5>
+  </center>
+  <div>Thank you, </div>
+  <div>Service performed on: </div>
+  <div>Services included: </div>
+  <div>Hours of service: </div>
   </div>
 </body>
 
