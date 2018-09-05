@@ -102,9 +102,13 @@ h1 {
   width: 50%;
 }
 
-.invoice-body {}
+.invoice-body {
 
-.invoice-container {}
+}
+
+.invoice-container {
+
+}
 
 .invoice-row {
   width: 100%;
@@ -119,6 +123,6 @@ h1 {
 }
 
 .invoice-form {
-  margin-top: 100px;
+  margin-top: 90px;
   background-color: #3995BC;
 }

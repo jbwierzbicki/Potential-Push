@@ -7,4 +7,9 @@ $(document).ready(function(){
     todayHighlight: true,
     autoclose: true,
   })
-})
+
+
+});
+function generateInvoice() {
+  document.getElementById("invoice-form").submit();
+}

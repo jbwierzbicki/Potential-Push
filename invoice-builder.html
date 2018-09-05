@@ -104,8 +104,8 @@
      <div class="container-fluid invoice-form">
       <div class="row invoice-row">
        <div class="col-md-6 col-sm-6 col-xs-12 ">
-        <form class="form-horizontal" method="post">
-         <div class="form-group ">
+        <form class="form-horizontal" method="post" id="invoice-form">
+         <div class="form-group">
           <label class="control-label col-sm-2 requiredField " for="name">
            Customer Name
            <span class="asteriskField">
@@ -217,7 +217,7 @@
          </div>
          <div class="form-group">
           <div class="col-sm-10 col-sm-offset-2">
-           <button class="btn btn-primary " name="submit" type="submit">
+           <button class="btn btn-primary " name="submit" type="submit" onclick="generateInvoice()">
             Submit
            </button>
           </div>
