@@ -11,9 +11,9 @@ $(document).ready(function(){
 
 });
 
-var customerName = getElementById("name");
-
 
 function generateInvoice() {
-  document.getElementById("invoice-form").submit();
+  var customerName = document.getElementById("name").value;
+  document.getElementById("customer-name-output").innerHTML = "Thank you, " + customerName + "!";
+
 }
