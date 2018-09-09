@@ -245,7 +245,7 @@
   </div>
 
   <!-- Invoice DIV -->
-  <div class="generated-invoice">
+  <div class="generated-invoice" id="generated-invoice-id">
     <center>
     <h4>Services Performed</h4>
     <h5>Invoice</h5>
@@ -258,6 +258,8 @@
   <br>
   <div>Hours of service: </div>
   </div>
+  <button id="print" onclick="printContent('#generated-invoice-id');" >Print</button>
+
 </body>
 
 </html>

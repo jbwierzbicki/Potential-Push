@@ -23,4 +23,12 @@ function generateInvoice() {
     var ServicesPerformed = " ";
   }
     document.getElementById("services-included").innerHTML = "Services included: " + ServicesPerformed;
-}
+};
+
+function printContent(el){
+var restorepage = $('body').html();
+var printcontent = $('#generated-invoice-id' + el).clone();
+$('body').empty().html(printcontent);
+window.print();
+$('body').html(restorepage);
+};
