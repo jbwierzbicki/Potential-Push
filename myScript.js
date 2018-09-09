@@ -14,6 +14,13 @@ $(document).ready(function(){
 
 function generateInvoice() {
   var customerName = document.getElementById("name").value;
+  var ServiceDate = document.getElementById("date").value;
   document.getElementById("customer-name-output").innerHTML = "Thank you, " + customerName + "!";
-
+  document.getElementById("service-date-output").innerHTML = "Service performed on: " + ServiceDate;
+  if (document.getElementById("virus-removal").checked == true) {
+    var ServicesPerformed = document.getElementById("virus-removal").value;
+  } else {
+    var ServicesPerformed = " ";
+  }
+    document.getElementById("services-included").innerHTML = "Services included: " + ServicesPerformed;
 }
