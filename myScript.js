@@ -15,14 +15,46 @@ $(document).ready(function(){
 function generateInvoice() {
   var customerName = document.getElementById("name").value;
   var ServiceDate = document.getElementById("date").value;
+  var hoursService = document.getElementById("number").value;
   document.getElementById("customer-name-output").innerHTML = "Thank you, " + customerName + "!";
   document.getElementById("service-date-output").innerHTML = "Service performed on: " + ServiceDate;
   if (document.getElementById("virus-removal").checked == true) {
-    var ServicesPerformed = document.getElementById("virus-removal").value;
+    var virusRemoval = document.getElementById("virus-removal").value;
   } else {
-    var ServicesPerformed = " ";
+    var virusRemoval = "";
   }
-    document.getElementById("services-included").innerHTML = "Services included: " + ServicesPerformed;
+  if (document.getElementById("pc-setup").checked == true) {
+    var pcSetup = document.getElementById("pc-setup").value;
+  } else {
+    var pcSetup = "";
+  }
+  if (document.getElementById("printer-setup").checked == true) {
+    var printerSetup = document.getElementById("printer-setup").value;
+  } else {
+    var printerSetup = "";
+  }
+  if (document.getElementById("printer-maintenance").checked == true) {
+    var printerMaintenance = document.getElementById("printer-maintenance").value;
+  } else {
+    var printerMaintenance = "";
+  }
+  if (document.getElementById("comprehensive-diagnostic-repair").checked == true) {
+    var comprehensiveDiagnosticRepair = document.getElementById("comprehensive-diagnostic-repair").value;
+  } else {
+    var comprehensiveDiagnosticRepair = "";
+  }
+  if (document.getElementById("software-installation").checked == true) {
+    var softwareInstallation = document.getElementById("software-installation").value;
+  } else {
+    var softwareInstallation = "";
+  }
+  if (document.getElementById("other").checked == true) {
+    var otherOption = document.getElementById("other").value;
+  } else {
+    var otherOption = "";
+  }
+    document.getElementById("services-included").innerHTML = "Services included: " + virusRemoval + pcSetup + printerSetup + printerMaintenance + comprehensiveDiagnosticRepair + softwareInstallation + otherOption;
+    document.getElementById("hours-service").innerHTML = "Total hours of service: " + hoursService;
 };
 
 function printContent(el){
