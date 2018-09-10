@@ -142,14 +142,16 @@ h1 {
 }
 
 .print-icon-table {
+
+}
+
+.print-icon-div {
   margin-left: auto;
   margin-right: auto;
   align-content: center !important;
   font-family: 'Changa One';
   width: 8.3in;
-  text-align: right;
-}
-
-.print-icon-div {
+  text-align: left;
   margin-bottom: -44px;
+
 }
