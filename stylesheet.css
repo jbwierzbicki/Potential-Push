@@ -12,6 +12,30 @@ h1 {
   font-size: 65px;
 }
 
+h4 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 19px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
+
 /* Navbar */
 
 .navbar-logo {
@@ -141,8 +165,16 @@ h1 {
   float: none;
 }
 
+#generated-invoice-id {
+    display: none;
+}
+
 .print-icon-table {
 
+}
+
+#print-icon-id {
+  display: none;
 }
 
 .print-icon-div {

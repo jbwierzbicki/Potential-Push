@@ -16,7 +16,7 @@ function generateInvoice() {
   var customerName = document.getElementById("name").value;
   var ServiceDate = document.getElementById("date").value;
   var hoursService = document.getElementById("number").value;
-  document.getElementById("customer-name-output").innerHTML = "Thank you, " + customerName + "!";
+  document.getElementById("customer-name-output").innerHTML = customerName + "," + "<br> <br>" + "The following is a summary of the services performed on <b>" + ServiceDate + "</b>. If you have any further questions or concerns, please contact me at jbwierzbicki@gmail.com.";
   document.getElementById("service-date-output").innerHTML = "Service performed on: " + ServiceDate;
   if (document.getElementById("virus-removal").checked == true) {
     var virusRemoval = document.getElementById("virus-removal").value;
@@ -55,6 +55,9 @@ function generateInvoice() {
   }
     document.getElementById("services-included").innerHTML = "Services included: " + virusRemoval + pcSetup + printerSetup + printerMaintenance + comprehensiveDiagnosticRepair + softwareInstallation + otherOption;
     document.getElementById("hours-service").innerHTML = "Total hours of service: " + hoursService;
+
+    document.getElementById("generated-invoice-id").style.display = "block";
+    document.getElementById("print-icon-id").style.display = "block";
 };
 
 function printContent(el){
