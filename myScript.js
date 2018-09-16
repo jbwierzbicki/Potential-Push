@@ -55,6 +55,7 @@ function generateInvoice() {
   }
     document.getElementById("services-included").innerHTML = "Services included: " + virusRemoval + pcSetup + printerSetup + printerMaintenance + comprehensiveDiagnosticRepair + softwareInstallation + otherOption;
     document.getElementById("hours-service").innerHTML = "Total hours of service: " + hoursService;
+    document.getElementById("service-cost").innerHTML = "Amount due: $" + hoursService * 30 + ".00";
 
     document.getElementById("generated-invoice-id").style.display = "block";
     document.getElementById("print-icon-id").style.display = "block";
