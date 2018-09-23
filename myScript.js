@@ -7,9 +7,16 @@ $(document).ready(function(){
     todayHighlight: true,
     autoclose: true,
   })
-
-
 });
+
+
+function addDay2() {
+
+  document.getElementById("date-performed2").style.display = "block";
+  document.getElementById("services-performed2").style.display = "block";
+
+
+  };
 
 
 function generateInvoice() {

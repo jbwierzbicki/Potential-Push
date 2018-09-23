@@ -213,3 +213,11 @@ h6 {
 #service-cost {
   text-align: right !important;
 }
+
+#date-performed2 {
+  display: none;
+}
+
+#services-performed2 {
+  display: none;
+}
