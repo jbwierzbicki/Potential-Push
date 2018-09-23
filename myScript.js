@@ -22,8 +22,9 @@ function addDay2() {
 function generateInvoice() {
   var customerName = document.getElementById("name").value;
   var ServiceDate = document.getElementById("date").value;
+  var ServiceDate2 = document.getElementById("date2").value;
   var hoursService = document.getElementById("number").value;
-  document.getElementById("customer-name-output").innerHTML = customerName + "," + "<br> <br>" + "The following is a summary of the services performed on <b>" + ServiceDate + "</b>. If you have any further questions or concerns, please contact me at jbwierzbicki@gmail.com.";
+  document.getElementById("customer-name-output").innerHTML = customerName + "," + "<br> <br>" + "The following is a summary of the services performed for this period. If you have any further questions or concerns, please contact me at jbwierzbicki@gmail.com.";
   document.getElementById("service-date-output").innerHTML = ServiceDate;
   if (document.getElementById("virus-removal").checked == true) {
     var virusRemoval = document.getElementById("virus-removal").value + "<br>";
@@ -63,6 +64,48 @@ function generateInvoice() {
     document.getElementById("services-included").innerHTML = virusRemoval + pcSetup + printerSetup + printerMaintenance + comprehensiveDiagnosticRepair + softwareInstallation + otherOption;
     document.getElementById("hours-service").innerHTML = hoursService;
     document.getElementById("service-cost").innerHTML = "Amount due: $" + hoursService * 30 + ".00";
+
+
+    document.getElementById("service-date-output2").innerHTML = ServiceDate2;
+    if (document.getElementById("virus-removal2").checked == true) {
+      var virusRemoval2 = document.getElementById("virus-removal2").value + "<br>";
+    } else {
+      var virusRemoval2 = "";
+    }
+    if (document.getElementById("pc-setup2").checked == true) {
+      var pcSetup2 = document.getElementById("pc-setup2").value + "<br>";
+    } else {
+      var pcSetup2 = "";
+    }
+    if (document.getElementById("printer-setup2").checked == true) {
+      var printerSetup2 = document.getElementById("printer-setup2").value + "<br>";
+    } else {
+      var printerSetup2 = "";
+    }
+    if (document.getElementById("printer-maintenance2").checked == true) {
+      var printerMaintenance2 = document.getElementById("printer-maintenance2").value + "<br>";
+    } else {
+      var printerMaintenance2 = "";
+    }
+    if (document.getElementById("comprehensive-diagnostic-repair2").checked == true) {
+      var comprehensiveDiagnosticRepair2 = document.getElementById("comprehensive-diagnostic-repair2").value + "<br>";
+    } else {
+      var comprehensiveDiagnosticRepair2 = "";
+    }
+    if (document.getElementById("software-installation2").checked == true) {
+      var softwareInstallation2 = document.getElementById("software-installation2").value + "<br>";
+    } else {
+      var softwareInstallation2 = "";
+    }
+    if (document.getElementById("other2").checked == true) {
+      var otherOption2 = document.getElementById("other2").value + "<br>";
+    } else {
+      var otherOption2 = "";
+    }
+      document.getElementById("services-included2").innerHTML = "<br>" + virusRemoval2 + pcSetup2 + printerSetup2 + printerMaintenance2 + comprehensiveDiagnosticRepair2 + softwareInstallation2 + otherOption2;
+      document.getElementById("hours-service").innerHTML = hoursService;
+
+
 
     document.getElementById("generated-invoice-id").style.display = "block";
     document.getElementById("print-icon-id").style.display = "block";
