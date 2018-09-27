@@ -14,15 +14,14 @@ function addDay2() {
 
   document.getElementById("date-performed2").style.display = "block";
   document.getElementById("services-performed2").style.display = "block";
-  document.getElementById("rate2").style.display = "block";
-
+  document.getElementById("rate2").style.visibility = "visible";
   };
 
 function addDay3() {
 
   document.getElementById("date-performed3").style.display = "block";
   document.getElementById("services-performed3").style.display = "block";
-  document.getElementById("rate3").style.display = "block";
+  document.getElementById("rate3").style.visibility = "visible";
   };
 
 

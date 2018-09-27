@@ -230,10 +230,24 @@ h6 {
   display: none;
 }
 
+#rate {
+  vertical-align: middle !important;
+}
+
 #rate2 {
-  display: none;
+  vertical-align: middle !important;
+  visibility: hidden;
 }
 
 #rate3 {
-  display: none;
+  vertical-align: middle !important;
+  visibility: hidden;
+}
+
+#mailing-address {
+  font-family: Times;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
 }
